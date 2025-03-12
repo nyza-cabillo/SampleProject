@@ -9,7 +9,15 @@ import AppLayout from '@/components/layout/AppLayout.vue'
         <v-col cols="12" md="6" class="mx-auto">
           <v-card class="mx-auto" elevation="24">
             <v-card-title class="text-center">
-              <h3 class="font-weight-black text-center">Welcome to Sample Project</h3>
+              <v-img
+                class="mx-auto"
+                src="/img/vross4.jpg"
+                height="100"
+                width="100"
+                cover
+                rounded="pill"
+              ></v-img>
+              <h3 class="font-weight-black text-center">Welcome to Vross MeatShoppe</h3>
               <p class="mb-5">Login Form</p>
             </v-card-title>
 
