@@ -7,8 +7,10 @@ import AppLayout from '@/components/layout/AppLayout.vue'
     <template #content>
       <v-container fluid>
         <v-row>
-          <v-col cols="12" md="8" class="bg-surface-light h-screen" v-if="!mobile"></v-col>
-          <v-col cols="12" md="4" :class="mobile ? '' : 'pt-16'">
+          <v-col cols="12" md="8" class="bg-surface-light h-screen" v-if="!mobile">
+            <v-img src="img/bg.jpg"></v-img>
+          </v-col>
+          <v-col cols="12" md="4" :class="mobile ? '' : 'pt-5'">
             <v-card
               class="mx-auto"
               prepend-icon="mdi-account-plus"
@@ -16,7 +18,7 @@ import AppLayout from '@/components/layout/AppLayout.vue'
               elevation="24"
             >
               <template v-slot:title>
-                <span class="font-weight-black">Welcome to Sample Project</span>
+                <span class="font-weight-black">Welcome to <br />Cacao Disease Classification</span>
               </template>
 
               <v-card-text class="bg-surface-light pt-4">
@@ -32,6 +34,8 @@ import AppLayout from '@/components/layout/AppLayout.vue'
                     type="password"
                     variant="outlined"
                   ></v-text-field>
+
+                  <v-text-field label="Role" type="text" variant="outlined"></v-text-field>
 
                   <v-btn class="mt-2" type="submit" block prepend-icon="mdi-account-plus"
                     >Register</v-btn

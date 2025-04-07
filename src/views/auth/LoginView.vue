@@ -7,19 +7,21 @@ import AppLayout from '@/components/layout/AppLayout.vue'
     <template #content>
       <v-container fluid>
         <v-row>
-          <v-col cols="12" md="8" class="bg-surface-light h-screen" v-if="!mobile"></v-col>
+          <v-col cols="12" md="8" class="bg-surface-light h-screen" v-if="!mobile">
+            <v-img src="img/bg.jpg"></v-img>
+          </v-col>
           <v-col cols="12" md="4" :class="mobile ? '' : 'pt-16'">
             <v-card class="mx-auto" elevation="24">
               <v-card-title class="text-center">
                 <v-img
                   class="mx-auto"
-                  src="/img/vross4.jpg"
+                  src="/img/cacao.jpg"
                   height="100"
                   width="100"
                   cover
                   rounded="pill"
                 ></v-img>
-                <h3 class="font-weight-black text-center">Welcome to Vross MeatShoppe</h3>
+                <h3 class="font-weight-black text-center">Cacao Disease Classification</h3>
                 <p class="mb-5">Login Form</p>
               </v-card-title>
 
@@ -28,6 +30,8 @@ import AppLayout from '@/components/layout/AppLayout.vue'
                   <v-text-field label="Email" variant="outlined"></v-text-field>
 
                   <v-text-field label="Password" type="password" variant="outlined"></v-text-field>
+
+                  <v-text-field label="Role" type="text" variant="outlined"></v-text-field>
 
                   <v-btn class="mt-2" type="submit" block prepend-icon="mdi-login">Login</v-btn>
                 </v-form>
